@@ -109,12 +109,26 @@ body {
     font-size: 26px;
   }
 }
+@media (max-width: 800px) {
+  #welcome .textbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #welcome .textbox h2, #welcome .textbox h6 {
+    text-align: start;
+  }
+  #welcome .reversebox {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #welcome .imgbox {
+    margin-bottom: 30px;
+  }
+}
 
 #about {
   padding: 50px 0;
-}
-#about .textbox {
-  padding: 0 100px;
 }
 #about .textbox h1 {
   font-weight: 700;
@@ -126,8 +140,10 @@ body {
   font-size: 20px;
   margin: 20px 0 0;
   line-height: 1.6;
+  width: 90%;
 }
 #about .textbox p {
+  width: 90%;
   font-size: 18px;
   color: #a8a8a8;
   line-height: 1.4;
@@ -236,7 +252,7 @@ body {
   padding: 0 0 20px 20px;
 }
 #trainers .wid {
-  width: 55%;
+  width: 60%;
 }
 #trainers .imgbox {
   width: 100%;
@@ -295,6 +311,7 @@ body {
   background-color: #708f97;
   padding: 50px 30px;
   text-align: center;
+  border-radius: 20px;
 }
 #pricing .box h2 {
   font-size: 25px;
@@ -354,6 +371,11 @@ body {
   }
   #pricing .textbox h5 {
     font-size: 18px;
+  }
+}
+@media (max-width: 1000px) {
+  #pricing .box .btn {
+    padding: 5px 15px;
   }
 }
 
@@ -426,6 +448,9 @@ body {
   #frequently .textbox p {
     font-size: 16px;
   }
+  #frequently ul {
+    padding-bottom: 40px;
+  }
 }
 
 #dogger {
@@ -472,7 +497,7 @@ body {
   padding: 0 0 20px 20px;
 }
 #dogger .wid {
-  width: 40%;
+  width: 60%;
 }
 @media (max-width: 1000px) {
   #dogger .col-md-6 {
@@ -500,12 +525,17 @@ body {
     font-size: 16px;
   }
 }
+@media (max-width: 400px) {
+  #dogger .wid {
+    width: 80%;
+  }
+}
 
 #ourservices {
   padding: 50px 0;
 }
 #ourservices .wid {
-  width: 40%;
+  width: 60%;
 }
 #ourservices h1 {
   font-weight: 700;
@@ -544,5 +574,22 @@ body {
   }
   #ourservices h3 {
     font-size: 18px;
+  }
+}
+@media (max-width: 400px) {
+  #ourservices .col-md-4 {
+    width: 100%;
+  }
+  #ourservices .wid {
+    width: 80%;
+  }
+  #ourservices .textbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #ourservices .textbox {
+    padding: 0 20px 40px;
   }
 }/*# sourceMappingURL=style.css.map */
