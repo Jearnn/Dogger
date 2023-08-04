@@ -3,9 +3,12 @@ body {
   font-weight: 500;
 }
 
+.imgbox {
+  overflow: hidden;
+  border-radius: 20px;
+}
 .imgbox img {
   width: 100%;
-  border-radius: 20px;
 }
 
 #carefor {
@@ -178,6 +181,9 @@ body {
     font-size: 26px;
   }
   #about .col-md-6 .textbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
   #about .col-md-6 .textbox ul {
@@ -576,7 +582,7 @@ body {
     font-size: 18px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   #ourservices .col-md-4 {
     width: 100%;
   }
